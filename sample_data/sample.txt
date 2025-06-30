@@ -1,0 +1,18 @@
+From: team@support.example.com  
+To: user@example.net  
+Subject: Invoice #948273 attached  
+Date: Mon, 5 Jul 2021 10:34:56 -0400  
+
+Dear Customer,
+
+Thank you for your continued service.  
+Please find attached your monthly invoice for your account ending in 7283.  
+
+If you have any questions regarding this invoice, please do not hesitate to contact our billing team.  
+
+Warm regards,  
+Customer Support  
+Example Corp  
+https://billing.example.com  
+
+Note: This is an automated message. Please do not reply.
