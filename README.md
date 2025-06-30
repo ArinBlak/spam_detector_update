@@ -42,8 +42,8 @@ spam-detector_update/
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/yourusername/spam-detector.git
-cd spam-detector/app
+git clone https://github.com/yourusername/spam-detector_update.git
+cd spam-detector_update/app
 ```
 
 ### 2. Install requirements
