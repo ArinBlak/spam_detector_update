@@ -17,12 +17,10 @@ class EmailRequest(BaseModel):
 
 app = FastAPI()
 
-model_path = "E:/spam_detector_update/spam_detector_pipeline.pkl"
 import os
 
-model_path = "E:/spam_detector_update/spam_detector_pipeline.pkl"
-print("File exists:", os.path.isfile(model_path))
-
+current_dir = os.path.dirname(__file__)
+model_path = os.path.join(current_dir, "spam_detector_pipeline.pkl")
 pipeline = joblib.load(model_path)
 
 @app.get("/", response_class=HTMLResponse)
