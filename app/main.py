@@ -7,19 +7,16 @@ Created on Mon Jun 30 21:00:24 2025
 
 from fastapi import FastAPI
 import joblib
-from Text_preprocessor import TextPreprocessor  # Required for joblib to deserialize
+from app.Text_preprocessor import TextPreprocessor 
 from pydantic import BaseModel
 from fastapi.responses import HTMLResponse
 from fastapi import Form
 
-# Define input format using Pydantic
 class EmailRequest(BaseModel):
     text: str
 
-# Initialize FastAPI app
 app = FastAPI()
 
-# Load the trained pipeline
 model_path = "E:/spam_detector_update/spam_detector_pipeline.pkl"
 import os
 
@@ -54,7 +51,6 @@ def interactive_home():
     </html>
     """
     
-# Define a prediction endpoint
 @app.post("/predict_form", response_class=HTMLResponse)
 def predict_form(text: str = Form(...)):
     proba = pipeline.predict_proba([text])[0]
