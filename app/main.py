@@ -7,7 +7,7 @@ Created on Mon Jun 30 21:00:24 2025
 
 from fastapi import FastAPI
 import joblib
-from app.Text_preprocessor import TextPreprocessor 
+from app.text_preprocessor import TextPreprocessor 
 from pydantic import BaseModel
 from fastapi.responses import HTMLResponse
 from fastapi import Form
